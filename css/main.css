@@ -1,0 +1,18 @@
+@import "variables.css";
+@import "header.css";
+@import "splash.css";
+@import "about.css";
+@import "projects.css";
+@import "skills.css";
+@import "contact.css";
+@import "footer.css";
+
+body {
+    background-color: var(--secondary);
+}
+
+main h2 {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

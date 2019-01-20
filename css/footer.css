@@ -1,0 +1,6 @@
+footer {
+    padding: 1.5rem;
+    font-family: var(--headText);
+    color: #333333ab;
+    text-align: right;
+}

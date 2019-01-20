@@ -4,32 +4,261 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/logo.png" >
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <title>Jacob Ikola</title>
 </head>
 <body>
 
+    <!-- Bumper for fixed nav -->
+    <div id="bumper"></div>
     <!-- Header -->
     <header>
-        <h3>Jacob Ikola</h3>
-        <nav>
-            <a>About</a>
-            <a>Portfolio</a>
-            <a>Contact</a>
+        <div class="brand">
+            <img id="logo" src="./assets/img/logo.png" alt="Jacob Ikola logo">
+            <h3 id="title">Jacob Ikola</h3>
+        </div>
+        <nav class="navMain">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- Mobile Nav -->
+        <div class="navMobileContainer">
+            <div class="mobileLinkButton" onclick="toggleNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav class="navMobile">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav> 
     </header>
 
     <!-- Main Content -->
     <main>
-
+        <!-- Splash Screen -->
+        <section id="splash">
+            <div class="imgContainer">
+                <img src="./assets/img/JNIN8889.jpeg" alt="Jacob Ikola">
+            </div>
+            <div class="textContainer text-center">
+                <h1>Jacob Ikola</h1>
+                <h2>Web Developer</h2>
+            </div>
+        </section>
+        <div class="container">
+            <!-- About -->
+            <section id="about">
+                <h2>// About</h2>
+                <div class="abtPCont">
+                    <p>All my life I have always gravitated toward technology. In the beginning it was video games. Some of my fondest childhood memories involve my friends circling around a TV playing games on the Xbox or Playstation. Around my Junior year of High School I was given a "Python for Beginners" book by my grandfather and began to write very basic math problems or print my name.</p>
+                    
+                    <p>It was around that time I began to form the idea that coding is something I really enjoyed. After attempting to go to college for biology I realized that programming is something that I should't keep as a hobby, but instead something I should pursue as a career.</p>
+                    
+                    <p>Since then I have always been hungry to learn more. For a year I taught myself anything and everything in order to make development a career.  When I moved from Michigan to Indianapolis I decided to take part in the ElevenFifty Academy JavaScript cohort, where the concepts and skills I began to learn could be sharpened and honed into something that could be viable in the workplace. I continue to be driven to learn and master what I am already familiar with in order to provide the best product possible.</p>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section id="projects">
+                <h2>// Projects</h2>
+                    <div class="projectCont">
+                        <!-- Heyku -->
+                        <div class="project">
+                            <div class="row">
+                                <div class="img-container col-12 col-md-6">
+                                    <img class="" src="./assets/img/heyku_thumbnail.PNG" alt="Heyku">
+                                </div>
+                                <div class="projectText col-12 col-md-6">
+                                    <h3>Heyku</h3>
+                                    <a href="https://polar-beach-88537.herokuapp.com/">https://polar-beach-88537.herokuapp.com/</a>
+                                    <a href="https://github.com/ikolajm/Heyku">https://github.com/ikolajm/Heyku</a>
+                                    <p>Created to act as a form of social media, users will post statuses in the for of haiku poems. Those who emjoy the poem have the ability to like and comment on it and give the user any feedback they may want to offer.</p>
+                                    <p class="skillUsed"><span>Mongo</span> <span>Express</span> <span>Node</span> <span>Bootstrap</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Second Hand Sales -->
+                        <div class="project">
+                            <div class="row">
+                                <div class="img-container col-12 col-md-6 right">
+                                    <img class="" src="./assets/img/shs_thumbnail.PNG" alt="Second Hand Sales">
+                                </div>
+                                <div class="projectText col-12 col-md-6">
+                                    <h3>Second Hand Sales</h3>
+                                    <a href="https://murmuring-basin-93386.herokuapp.com/thrifts?page=1">https://murmuring-basin-93386.herokuapp.com/thrifts?page=1/</a>
+                                    <a href="https://github.com/ikolajm/Heyku">https://github.com/ikolajm/Heyku</a>
+                                    <p>Created to allow users to find the best second hand shops in their area. Users can add shops with parameters such as price range, address, and hours. If someone was pleased with the recommended shop they can comment and speak about their experience.</p>
+                                    <p class="skillUsed"><span>Mongo</span> <span>Express</span> <span>Node</span> <span>Bootstrap</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- SpaceX api -->
+                        <div class="project">
+                            <div class="row">
+                                <div class="img-container col-12 col-md-6 ">
+                                    <img class="" src="./assets/img/api_thumbnail.PNG" alt="SpaceX API">
+                                </div>
+                                <div class="projectText col-12 col-md-6">
+                                    <h3>SpaceX API</h3>
+                                    <a href="https://github.com/ikolajm/SpaceX-api">https://github.com/ikolajm/SpaceX-api</a>
+                                    <p>Using the SpaceX api, users can choose a rocket (or all of them), then a name, image, description, and further specifications of the rocket will be returned to them.</p>
+                                    <p class="skillUsed"><span>HTML5</span> <span>CSS3</span> <span>Javascript</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Informative webpage -->
+                        <div class="project">
+                            <div class="row">
+                                <div class="img-container col-12 col-md-6 right">
+                                    <img class="" src="./assets/img/informative_page.PNG" alt="Tutorial webpage">
+                                </div>
+                                <div class="projectText col-12 col-md-6">
+                                    <h3>Tutorial Page</h3>
+                                    <a href="https://ikolajm.github.io/Informative-Webpage/">https://ikolajm.github.io/Informative-Webpage/</a>
+                                    <a href="https://github.com/ikolajm/Informative-Webpage">https://github.com/ikolajm/Informative-Webpage</a>
+                                    <p>Simple webpage created to teach users about the basics of JavaScript functions, arrays, and objects.</p>
+                                    <p class="skillUsed"><span>HTML5</span> <span>CSS3</span> <span>Javascript</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- CSS creature -->
+                        <div class="project">
+                            <div class="row">
+                                <div class="img-container col-12 col-md-6 text-center">
+                                    <img class="goblin" src="./assets/img/goblin_css.PNG" alt="Goblin">
+                                </div>
+                                <div class="projectText col-12 col-md-6">
+                                    <h3>CSS Goblin</h3>
+                                    <a href="https://codepen.io/ikolajm/pen/yGELZr">https://codepen.io/ikolajm/pen/yGELZr</a>
+                                    <p>Drawing made with pure HTML and CSS to show competency when creating and styling elements.</p>
+                                    <p class="skillUsed"><span>HTML5</span> <span>CSS3</span> <span>Javascript</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Skills -->
+                <section id="skills">
+                <h2>// Skills</h2>
+                    <div class="skillCont">
+                        <div class="row">
+                            <!-- Technical Skills -->
+                            <div class="techSkills col-12 col-md-6">
+                                <h3>Technical Skills</h3>
+                                <!-- Html5 -->
+                                <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" alt="HTML5" >
+                                <!-- Css3 -->
+                                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt="CSS3" >
+                                <!-- Bootstrap -->
+                                <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap" >
+                                <!-- Js -->
+                                <img src="https://www.codementor.io/assets/page_img/learn-javascript.png" alt="JavaScript" >
+                                <!-- jQuery -->
+                                <img src="https://pngimage.net/wp-content/uploads/2018/06/logo-jquery-png-3.png" alt="jQuery" >
+                                <!-- MongoDB -->
+                                <img src="https://img.icons8.com/color/1600/mongodb.png" alt="MongoDB" >
+                                <!-- Node -->
+                                <img src="https://pngimage.net/wp-content/uploads/2018/06/node-png-7.png" alt="node" >
+                            </div>
+                            <!-- Soft Skills -->
+                            <div class="softSkill col-12 col-md-6">
+                                <h3>Soft Skills</h3>
+                                <p>Communication</p>
+                                <p>Teamwork</p>
+                                <p>Patience</p>
+                                <p>Problem solving</p>
+                                <p>Accountability</p>
+                                <p>Time Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- Contact -->
+            <section id="contact">
+                <h2 class="">// Contact</h2>
+                <div class="contactLinks">
+                    <i class="far fa-envelope"></i> <span>ikolajm@gmail.com</span><br />
+                    <a href="https://github.com/ikolajm" target="blank"><i class="fab fa-github"></i> https://github.com/ikolajm</a><br />
+                    <a href="https://www.linkedin.com/in/jacob-ikola-402881154/" target="blank"><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/jacob-ikola-402881154/</a>
+                </div>
+                <div class="row formCont">
+                    <form action="https://formspree.io/ikolajm@gmail.com" method="POST">
+                        <div class="control-group">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Your Name"
+                                id="name"
+                                required
+                                data-validation-required-message="Please enter your name"
+                                name="name"
+                                >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Your Email"
+                                id="email"
+                                required
+                                data-validation-required-message="Please enter your email"
+                                name="_replyto"
+                                >
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <textarea
+                                class="form-control"
+                                rows="7"
+                                placeholder="Your Message"
+                                id="message"
+                                required
+                                data-validation-required-message="Please leave a message"
+                                name="message"
+                                ></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-lg btn-secondary">
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
-
+    
     <!-- Footer -->
     <footer>
-
+        &copy; Jacob Ikola 2019
     </footer>
     
     <!-- jQuery library -->

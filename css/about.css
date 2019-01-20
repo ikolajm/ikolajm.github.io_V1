@@ -1,0 +1,15 @@
+#about h2 {
+    font-family: var(--headText);
+}
+
+.abtPCont {
+    padding: 1rem;
+}
+
+#about p {
+    font-family: var(--supportText);
+}
+
+#about p:last-child {
+    margin-bottom: 0rem;
+}

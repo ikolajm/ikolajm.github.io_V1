@@ -1,0 +1,13 @@
+:root {
+    --main: #e6f5ff;
+    --secondary: #FFFFFF;
+    --tertiary: #4B4E6D;
+    --accent: #13293D;
+    --shadow: #006494;
+
+    --headText: 'Oswald', sans-serif;
+    --supportText: 'Montserrat', sans-serif;
+
+    --bb: 1px solid #1717171f;
+
+}

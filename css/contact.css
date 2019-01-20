@@ -1,0 +1,36 @@
+.contactLinks, .formCont {
+    padding: 1rem;
+}
+
+.contactLinks i {
+    font-size: 2rem;
+    padding-right: 5px;
+}
+
+.contactLinks a {
+    display: inline-block;
+    color: #333 !important;
+    font-family: var(--supportText);
+}
+
+.contactLinks span {
+    font-family: var(--supportText);
+}
+
+form {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+}
+
+label {
+    font-family: var(--headText);
+}
+
+input {
+    font-family: var(--supportText);
+}
+
+button {
+    font-family: var(--headText);
+}

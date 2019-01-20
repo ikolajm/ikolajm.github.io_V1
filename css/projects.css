@@ -1,0 +1,67 @@
+#projects h2, #projects h3 {
+    font-family: var(--headText);
+}
+
+.projectCont {
+    padding: 2rem;
+}
+
+hr {
+    width: 80%;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.img-container img {
+    border: var(--bb);
+}
+
+#projects a {
+    display: inline-block;
+    font-family: var(--supportText);
+    color: #333;
+}
+
+#projects p {
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: var(--supportText);
+}
+
+.skillUsed {
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 350px) {
+    .skillUsed {
+        line-height: 40px;
+    }
+}
+
+.skillUsed span {
+    background-color: var(--main);
+    padding: .75rem;
+    font-family: var(--supportText);
+}
+
+.goblin {
+    width: 65% !important;
+}
+
+@media screen and (min-width: 992px) {
+    hr {
+        width: 70%;
+    }
+
+    .project {
+        width: 85%;
+        margin: auto;
+    }
+
+    .right {
+        float: right;
+    }
+}

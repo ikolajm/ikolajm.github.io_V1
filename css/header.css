@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    transition: .5s;
+    background: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    height: 35px;    
+    transition: .5s;
+
+}
+
+.brand h3 {
+    padding-left: 10px;
+    margin: 0;
+    color: black;
+    font-family: var(--headText);    
+    transition: .5s;
+}
+
+nav a {
+    transition: .5s;
+}
+
+.navMain a {
+    padding-left: 10px;
+    font-size: 1.5rem;
+    font-family: var(--supportText);
+    color: black;
+}
+
+/* Mobile */
+.navMobileContainer {
+    position: relative;
+}
+
+.navMobileContainer i {
+    font-size: 2.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: black;
+}
+
+.navMobile {
+    position: absolute;
+    overflow: hidden;
+    top: 65px;
+    left: 0;
+    background: white;
+    transition: .5s;
+}
+
+.navMobile a {
+    display: block;
+    width: 100vw;
+    padding: 1rem;
+    color: black;
+    font-family: var(--supportText);
+    border-bottom: var(--bb);
+    transition: .5s;
+}
+
+.navMobile a:first-child {
+    border-top: var(--bb);
+}
+
+@media screen and (max-width: 768px) {
+    .navMain {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .navMobileContainer {
+        display: none;
+    }
+}
