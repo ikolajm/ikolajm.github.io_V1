@@ -56,4 +56,14 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     }, 500);
 });
 
-// Active states
+// Active states (doesn't work with amount of info - too little)
+// $(window).scroll(function() {
+//     var scrollDistance = $(window).scrollTop();
+//     $('section').each(function(i) {
+//         if ($(this).position().top - 65 <= scrollDistance) {
+//             console.log($(this));
+//             $('nav a.active').removeClass('active');
+//             $('nav a').eq(i).addClass('active');
+//         }
+//     });
+// }).scroll();

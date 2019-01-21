@@ -41,6 +41,10 @@ nav a {
     color: black;
 }
 
+.active {
+    color: var(--main) !important;
+}
+
 /* Mobile */
 .navMobileContainer {
     position: relative;
