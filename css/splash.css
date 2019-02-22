@@ -19,6 +19,7 @@
 #splash .imgContainer {
     border-radius: 50%;
     border: var(--bb);
+    display: block;
 }
 
 #splash .imgContainer img {
@@ -28,6 +29,7 @@
     border: 5px solid white;
     transform: rotate(90deg);
     filter: grayscale(80%);
+    display: block;
 }
 
 #splash h1, #splash h2 {
