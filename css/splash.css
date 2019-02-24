@@ -27,6 +27,7 @@
     height: 120px;
     border-radius: 50%;
     border: 5px solid white;
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     filter: grayscale(80%);
     display: block;
