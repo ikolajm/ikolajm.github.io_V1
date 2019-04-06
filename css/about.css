@@ -8,6 +8,8 @@
 
 #about p {
     font-family: var(--supportText);
+    line-height: 25px;
+    font-size: 1.75rem;
 }
 
 #about p:last-child {

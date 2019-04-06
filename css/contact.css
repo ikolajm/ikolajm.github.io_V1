@@ -11,10 +11,14 @@
     display: inline-block;
     color: #333 !important;
     font-family: var(--supportText);
+    line-height: 35px;
+    font-size: 1.5rem;
 }
 
 .contactLinks span {
     font-family: var(--supportText);
+    line-height: 35px;
+    font-size: 1.55rem;
 }
 
 form {
